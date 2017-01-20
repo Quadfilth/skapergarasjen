@@ -1,16 +1,18 @@
-# http-server: a command-line http server
-
-`http-server` is a simple, zero-configuration command-line http server.  It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
-
-![](https://github.com/nodeapps/http-server/raw/master/screenshots/public.png)
-
 # Installing globally:
 
 Installation via `npm`:
-
      npm install http-server -g
 
-This will install `http-server` globally so that it may be run from the command line.
+This will get all repositories to run the node-server, and install `http-server` globally so that it may be run from the command line.
+
+Other applications you need:
+
+     sudo apt-get install npm nodejs nodejs-legacy jitsu -g
+     
+     `nodejs` is the overall nodepackage
+     `nodejs-legacy` contains backwards-compatability from older builds
+     `npm` is node's package manager
+     `jitsu` is a repository that runs through node.js
 
 ## Usage:
 
@@ -32,6 +34,7 @@ This will install `http-server` globally so that it may be run from the command 
 
      node bin/http-server
 
+*Make sure you are currently inside the projectfolder*
 *Now you can visit http://localhost:8080 to view your server*
 
 ## Available Options:
